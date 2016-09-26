@@ -4,9 +4,10 @@
 
 int main(void)
 {
-    int num1, num2;
+    int num1, num2, sum;
     printf("Enter a two digit number: ");
     scanf("%1d%1d", &num1, &num2);
+    sum = num1 * 10 + num2;
 
     printf("You entered the number ");
 
@@ -37,17 +38,20 @@ int main(void)
         }
     }
     else {
+        if (sum > 10 && (sum % 10) != 0) 
+            printf("-");
+
         switch (num2) {
             case 0: printf("\n"); break;
-            case 1: printf("-one\n"); break;
-            case 2: printf("-two\n"); break;
-            case 3: printf("-three\n"); break;
-            case 4: printf("-four\n"); break;
-            case 5: printf("-five\n"); break;
-            case 6: printf("-six\n"); break;
-            case 7: printf("-seven\n"); break;
-            case 8: printf("-eight\n"); break;
-            case 9: printf("-nine\n"); break;
+            case 1: printf("one\n"); break;
+            case 2: printf("two\n"); break;
+            case 3: printf("three\n"); break;
+            case 4: printf("four\n"); break;
+            case 5: printf("five\n"); break;
+            case 6: printf("six\n"); break;
+            case 7: printf("seven\n"); break;
+            case 8: printf("eight\n"); break;
+            case 9: printf("nine\n"); break;
         }
     }
     return 0;
