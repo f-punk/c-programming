@@ -21,7 +21,7 @@ int main(void)
         sum = year * 10000 + month * 100 + day;
         
         if (sum == 0) {
-            ;
+            break;
         }
         else if (sum < earliest) {
             earliest = sum;
